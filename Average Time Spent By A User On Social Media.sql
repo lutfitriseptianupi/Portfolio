@@ -1,3 +1,17 @@
+---- The description for each column is as follows:
+-- age: The age of the user.
+-- gender: The gender identity of the user (Male, Female, Non-binary).
+-- demographics: The type of area the user resides in (Urban, Suburban, Rural).
+-- interests: The user's primary area of interest or hobby.
+-- location:The country of residence for the user.
+-- platform: The social media platform where the user spends time.
+-- profession: The user's occupation or professional status.
+-- income: The yearly income of the user.
+-- indebt: Indicates whether the user is in debt (True or False).
+-- homeowner: Indicates whether the user owns a home (True or False).
+-- owns_cars: Indicates whether the user owns cars (True or False).
+
+
 --- Average Time Spent by Gender ---
 
 select avg(time_spent) as AverageTimeSpent, gender
@@ -413,4 +427,20 @@ group by location, gender, indebt
 order by location, gender
 
 --- Rationale: To analyze how time spent on social media varies across gender and countries specifically for users in debt.---
+
+
+--- Conclusion from Data Exploration:
+
+-- After analyzing the dataset using various SQL queries, several insights can be drawn:
+
+-- There is a significant difference in the average time spent on social media between different demographics such as age groups, genders, income levels, and professions.
+-- Users in certain countries spend more time on social media compared to others, indicating regional preferences or cultural differences.
+-- Homeownership and car ownership don't seem to have a strong correlation with time spent on social media.
+-- Users with specific interests or hobbies tend to spend more time on social media, suggesting targeted content strategies.
+-- Debt status might influence the time spent on social media, as users in debt may seek distraction or entertainment.
+-- The choice of social media platform greatly influences the time spent, with certain platforms being more engaging for users than others.
+-- Further analysis could involve exploring correlations between different demographic factors and interests to tailor marketing strategies or platform features to specific user segments.
+
+-- Overall, understanding these patterns can help businesses and social media platforms optimize their strategies to better engage users and cater to their preferences.
+
 
